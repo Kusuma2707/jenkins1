@@ -2,7 +2,7 @@ name: C Build & Run
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
 jobs:
   build:
