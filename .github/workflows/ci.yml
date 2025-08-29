@@ -1,0 +1,19 @@
+name: C Build & Run
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Build
+        run: gcc main.c -o main
+
+      - name: Run
+        run: ./main
